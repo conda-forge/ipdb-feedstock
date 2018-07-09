@@ -2,7 +2,7 @@
 {% set version = "0.11" %}
 {% set sha256 = "7f3016284fb0f4859e9692ecfda18e4d703c5ffc7e493d899831a7db2c187a16" %}
 
-{% set gh_org = "gotcha"  %}
+{% set gh_org = "gotcha" %}
 {% set gh_repo = name %}
 
 package:
@@ -15,13 +15,15 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  noarch: python
+  number: 1
   entry_points:
     - ipdb = ipdb.__main__:main
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
+  host:
+    - pip
     - python
     - setuptools
 

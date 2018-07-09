@@ -14,14 +14,15 @@ Summary: Integration of IPython pdb
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/ipdb-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ipdb-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/ipdb-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/ipdb-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/ipdb-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/ipdb-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/ipdb-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/ipdb-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ipdb/badges/version.svg)](https://anaconda.org/conda-forge/ipdb)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/ipdb/badges/downloads.svg)](https://anaconda.org/conda-forge/ipdb)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-ipdb-green.svg)](https://anaconda.org/conda-forge/ipdb) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ipdb.svg)](https://anaconda.org/conda-forge/ipdb) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ipdb.svg)](https://anaconda.org/conda-forge/ipdb) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ipdb.svg)](https://anaconda.org/conda-forge/ipdb) |
 
 Installing ipdb
 ===============
