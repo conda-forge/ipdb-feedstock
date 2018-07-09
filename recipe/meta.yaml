@@ -2,7 +2,7 @@
 {% set version = "0.11" %}
 {% set sha256 = "7f3016284fb0f4859e9692ecfda18e4d703c5ffc7e493d899831a7db2c187a16" %}
 
-{% set gh_org = "gotcha"  %}
+{% set gh_org = "gotcha" %}
 {% set gh_repo = name %}
 
 package:
