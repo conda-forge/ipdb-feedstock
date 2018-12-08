@@ -16,10 +16,13 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   entry_points:
     - ipdb = ipdb.__main__:main
-  script: python -m pip install --no-deps --ignore-installed .
+  script:
+    - {{ PYTHON }} -m pip install --no-deps --ignore-installed .
+    - call %RECIPE_DIR%/install-scripts.bat  # [win]
+    - . ${RECIPE_DIR}/install-scripts.sh  # [not win]
 
 requirements:
   host:
