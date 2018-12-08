@@ -41,7 +41,15 @@ test:
 about:
   home: https://github.com/{{ gh_org }}/{{ gh_repo }}
   license: BSD-3
+  license_file: COPYING.txt
   summary: "Integration of IPython pdb"
+
+  description: |
+    ipdb exports functions to access the IPython debugger,
+    which features tab completion, syntax highlighting, better
+    tracebacks, better introspection with the same interface
+    as the pdb module.
+  dev_url: https://github.com/{{ gh_org }}/{{ gh_repo }}
 
 extra:
   recipe-maintainers:
