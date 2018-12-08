@@ -19,7 +19,7 @@ build:
   number: 2
   entry_points:
     - ipdb = ipdb.__main__:main
-  script: 
+  script:
     - "{{ PYTHON }} -m pip install . --no-deps -vv"
     - call %RECIPE_DIR%/install-scripts.bat  # [win]
     - . ${RECIPE_DIR}/install-scripts.sh  # [not win]
@@ -37,6 +37,8 @@ requirements:
 test:
   imports:
     - ipdb
+  commands:
+    - python -c 'import os; assert(os.environ["PYTHONBREAKPOINT"] == "ipdb.set_trace")'
 
 about:
   home: https://github.com/{{ gh_org }}/{{ gh_repo }}
