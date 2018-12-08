@@ -19,8 +19,8 @@ build:
   number: 2
   entry_points:
     - ipdb = ipdb.__main__:main
-  script:
-    - {{ PYTHON }} -m pip install --no-deps --ignore-installed .
+  script: 
+    - "{{ PYTHON }} -m pip install . --no-deps -vv"
     - call %RECIPE_DIR%/install-scripts.bat  # [win]
     - . ${RECIPE_DIR}/install-scripts.sh  # [not win]
 
