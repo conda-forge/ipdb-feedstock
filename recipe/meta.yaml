@@ -1,6 +1,6 @@
 {% set name = "ipdb" %}
-{% set version = "0.12" %}
-{% set sha256 = "62a248218964b3d2bec1d81fea752769687758f4b763c4ff4a9f26ed67108f34" %}
+{% set version = "0.12.1" %}
+{% set sha256 = "99559001801e572a0854cd0f47c40766072ef98e04849eb66edffd9091970a51" %}
 
 {% set gh_org = "gotcha" %}
 {% set gh_repo = name %}
