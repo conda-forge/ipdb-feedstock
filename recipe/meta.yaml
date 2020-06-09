@@ -1,6 +1,6 @@
 {% set name = "ipdb" %}
-{% set version = "0.12.3" %}
-{% set sha256 = "d2aad7ff017c5ee6758e0c6b48049a987489e7f75682843bcf114ed1d5a396a6" %}
+{% set version = "0.13.0" %}
+{% set sha256 = "f56eab4016ea69522f16af0e7a6df7707988330ab3b729fb722f17a22b7c881d" %}
 
 {% set gh_org = "gotcha" %}
 {% set gh_repo = name %}
@@ -20,7 +20,7 @@ build:
   entry_points:
     - ipdb = ipdb.__main__:main
   script:
-    - "{{ PYTHON }} -m pip install . --no-deps -vv"
+    - {{ PYTHON }} -m pip install . --no-deps -vv
     - call %RECIPE_DIR%/install-scripts.bat  # [win]
     - . ${RECIPE_DIR}/install-scripts.sh  # [not win]
 
@@ -44,7 +44,7 @@ about:
   home: https://github.com/{{ gh_org }}/{{ gh_repo }}
   license: BSD-3
   license_file: COPYING.txt
-  summary: "Integration of IPython pdb"
+  summary: Integration of IPython pdb
 
   description: |
     ipdb exports functions to access the IPython debugger,
