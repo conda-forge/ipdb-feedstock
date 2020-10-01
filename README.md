@@ -5,7 +5,7 @@ Home: https://github.com/gotcha/ipdb
 
 Package license: BSD-3
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Integration of IPython pdb
 
