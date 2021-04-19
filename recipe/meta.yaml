@@ -27,11 +27,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=2.7
     - setuptools
 
   run:
-    - python
+    - python >=2.7
     - ipython
 
 test:
@@ -42,7 +42,7 @@ test:
 
 about:
   home: https://github.com/{{ gh_org }}/{{ gh_repo }}
-  license: BSD-3
+  license: BSD-3-Clause
   license_file: COPYING.txt
   summary: Integration of IPython pdb
 
