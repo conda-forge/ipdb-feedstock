@@ -1,6 +1,6 @@
 {% set name = "ipdb" %}
-{% set version = "0.13.4" %}
-{% set sha256 = "52eb68c813d8b34b49b98b0cf58893e87b28f20c562218ff858cfe685d5912b0" %}
+{% set version = "0.13.7" %}
+{% set sha256 = "037a2ad43b887d340a3207452a1a2a47621d50dac67dd045fb8ca5d3e909bc6a" %}
 
 {% set gh_org = "gotcha" %}
 {% set gh_repo = name %}
@@ -27,11 +27,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=2.7
     - setuptools
 
   run:
-    - python
+    - python >=2.7
     - ipython
 
 test:
@@ -42,7 +42,7 @@ test:
 
 about:
   home: https://github.com/{{ gh_org }}/{{ gh_repo }}
-  license: BSD-3
+  license: BSD-3-Clause
   license_file: COPYING.txt
   summary: Integration of IPython pdb
 
