@@ -3,7 +3,7 @@ About ipdb
 
 Home: https://github.com/gotcha/ipdb
 
-Package license: BSD-3
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ipdb-feedstock/blob/master/LICENSE.txt)
 
@@ -44,6 +44,7 @@ Installing `ipdb` from the `conda-forge` channel can be achieved by adding `cond
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `ipdb` can be installed with:
