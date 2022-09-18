@@ -33,6 +33,8 @@ requirements:
   run:
     - python >=2.7
     - ipython
+    - toml >=0.10.2
+    - decorator
 
 test:
   imports:
