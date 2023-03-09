@@ -1,11 +1,11 @@
-About ipdb
-==========
+About ipdb-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ipdb-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/gotcha/ipdb
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ipdb-feedstock/blob/main/LICENSE.txt)
 
 Summary: Integration of IPython pdb
 
