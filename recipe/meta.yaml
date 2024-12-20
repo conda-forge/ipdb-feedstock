@@ -16,7 +16,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - ipdb = ipdb.__main__:main
   script:
@@ -27,16 +27,18 @@ build:
 requirements:
   host:
     - pip
-    - python >=2.7
+    - python {{ python_min }}
     - setuptools
 
   run:
-    - python >=2.7
+    - python >={{ python_min }}
     - ipython
     - toml >=0.10.2
     - decorator
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - ipdb
   commands:
